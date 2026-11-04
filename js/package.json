@@ -1,0 +1,71 @@
+{
+  "name": "@runapi.ai/muse-video",
+  "runapi": {
+    "slug": "muse-video"
+  },
+  "version": "0.2.0",
+  "description": "RunAPI Muse Video SDK for text-to-video and single-image-to-video workflows in JavaScript, Python, Ruby, Go, and Java",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@runapi.ai/core": "^0.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^4.1.11"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "runapi",
+    "runapi-ai",
+    "muse-video",
+    "api",
+    "sdk",
+    "typescript",
+    "python",
+    "ruby",
+    "golang",
+    "java",
+    "maven",
+    "gradle",
+    "video-generation",
+    "text-to-video",
+    "image-to-video"
+  ],
+  "author": "RunAPI",
+  "license": "Apache-2.0",
+  "homepage": "https://runapi.ai/models/muse-video",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runapi-ai/muse-video-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/runapi-ai/muse-video-sdk/issues"
+  }
+}
